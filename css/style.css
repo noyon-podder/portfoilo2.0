@@ -759,6 +759,7 @@ body.open .hamburger .bar:last-child {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 .portfolio-title {
   padding-bottom: 1rem;
