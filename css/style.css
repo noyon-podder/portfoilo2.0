@@ -294,9 +294,11 @@ header.scrolled .logo {
 }
 
 .links {
-  flex: 1;
+  /* flex: 1; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .links ul {
@@ -426,7 +428,7 @@ body.open .hamburger .bar:last-child {
   margin-right: 1.5rem;
 }
 
-.section-image {
+/* .section-image {
   position: relative;
   width: 100%;
   min-height: calc(100% + 120px);
@@ -437,7 +439,7 @@ body.open .hamburger .bar:last-child {
   );
   margin-top: -120px;
   border-radius: 0 0 80px 80px;
-}
+} */
 .section-image .person {
   position: absolute;
   width: 95%;
