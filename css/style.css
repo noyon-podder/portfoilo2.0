@@ -8,8 +8,12 @@
 :root {
   --hue-1: 257;
   --hue-2: 47;
-  --main-color-1: hsl(var(--hue-1), 100%, 60%);
-  --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
+  --hue-5: 201;
+  --hue-6: 208;
+  /* --main-color-1: hsl(var(--hue-1), 100%, 60%); */
+  --main-color-1: hsl(var(--hue-5), 100%, 45%);
+  --main-color-dark-1: hsl(var(--hue-5), 100%, 40%);
+  /* --main-color-dark-1: hsl(var(--hue-1), 69%, 50%); */
   --main-color-2: hsl(var(--hue-2), 100%, 61%);
   --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
 
@@ -22,7 +26,8 @@ body {
   --bg-color-2: #fff;
   --bg-color-3: hsl(var(--hue-1), 100%, 98%);
   --bg-color-transparent: rgba(255, 255, 255, 0.6);
-  --heading-color: hsl(var(--hue-1), 61%, 24%);
+  --heading-color: hsl(var(--hue-6), 100%, 11%);
+  /* --heading-color: hsl(var(--hue-1), 61%, 24%); */
   --text-color: hsl(var(--hue-1), 17%, 63%);
 }
 body.dark {
@@ -85,7 +90,7 @@ body.stop-scrolling {
   overflow: hidden;
 }
 ::selection {
-  background-color: hsla(var(--hue-1), 100%, 60%, 0.9);
+  background-color: hsl(var(--hue-5), 100%, 45%, 0.9);
   color: #ffff;
 }
 a {
@@ -428,6 +433,33 @@ body.open .hamburger .bar:last-child {
   margin-right: 1.5rem;
 }
 
+.circular-img{
+  max-width: 360px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.circular-img-inner{
+  text-align: center;
+  border-radius: 0 0 100px 180px;
+  overflow: hidden;
+}
+.circular-img-circle{
+  height: 370px;
+  width: 370px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color-1);
+}
+.circular-img img{
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+
 /* .section-image {
   position: relative;
   width: 100%;
@@ -440,6 +472,8 @@ body.open .hamburger .bar:last-child {
   margin-top: -120px;
   border-radius: 0 0 80px 80px;
 } */
+
+
 .section-image .person {
   position: absolute;
   width: 95%;
@@ -465,7 +499,7 @@ body.open .hamburger .bar:last-child {
   left: 100%;
   top: 30%;
   transform: translate(-50%, -50%);
-}
+} 
 /*
 *********************************************
 ---------->About Section style<--------------
